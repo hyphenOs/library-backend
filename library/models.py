@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 
 class Book(models.Model):
     title = models.CharField(max_length=100)
@@ -14,3 +12,19 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Member(models.Model):
+    name = models.CharField(max_length=100)
+    phone = models.IntegerField()
+    email = models.CharField(max_length=100)
+    address = models.CharField(max_length=100)
+    city = models.CharField(max_length=100)
+    state = models.CharField(max_length=100)
+    zip_code = models.IntegerField()
+
+    class Meta:
+        ordering = ['id']
+
+    def __str__(self):
+        return self.name
