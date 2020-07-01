@@ -1,3 +1,5 @@
+# Copyright (c) 2020 hyphenOs Software Labs Private Limited
+
 from django.db import models
 
 

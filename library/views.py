@@ -1,3 +1,5 @@
+# Copyright (c) 2020 hyphenOs Software Labs Private Limited
+
 from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework import generics
